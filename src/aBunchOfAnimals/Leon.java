@@ -7,8 +7,7 @@ public class Leon extends Animal implements AttackZebras {
 	
 	@Override
 	public void eat() {
-		System.out.println("The Leon eat the Zebra!");
-		super.numberOfeatenZebras++;
+		System.out.println("The Leon eat!");
 	}
 
 	public void leonAttackZebra(Leon leon, Zebra zebra) {
@@ -19,13 +18,30 @@ public class Leon extends Animal implements AttackZebras {
 	public static void leonAttackAndEatZebra(Leon leon, Zebra zebra) {
 		leon.leonAttackZebra(leon, zebra);
 		leon.eat();
+		numberOfeatenZebras++;
+		leon.numberOfeatenZebrasByLeon++;
 	}
 	
-	public int getEatenZebras() {
-		return super.numberOfeatenZebras; //se uso super e this non ho bisogno di definire i metodi e le variabili come static
+	public static int getEatenZebras() {
+		return numberOfeatenZebras; //se uso super e this non ho bisogno di definire i metodi e le variabili come static
 	}
 	
 	public int getLeons() {
 		return numberOfLeons;
+	}
+	
+	public int getLeonss() {
+		return numberOfLeons;
+	}
+	
+	@Override
+	public String getName() {
+		name = name + " The Leon";
+		return name;
+	}
+	
+	@Override
+	public void setName(String name) {
+		this.name = name;
 	}
 }
