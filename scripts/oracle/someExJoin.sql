@@ -1,4 +1,6 @@
 
+
+
 --join using on
 select c.first_name, r.race_name
 from characters c join races r
