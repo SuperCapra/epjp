@@ -1,4 +1,4 @@
-package aBunchOfAnimals;
+package aBunchInSavana;
 
 public class Zebra extends Animal {
 //	private String name;

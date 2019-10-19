@@ -1,4 +1,4 @@
-package aBunchOfAnimals;
+package aBunchInSavana;
 
 public class Leon extends Animal implements AttackZebras, AttackAndEatZebras {
 	private String name;
